@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend Battle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="hideLoader()">
+  <!-- Loader using .mp4 -->
+  <div id="loader">
+    <video autoplay muted loop playsinline>
+      <source src="assets/loader.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="modeToggle">Toggle Mode</button></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Welcome to Frontend Battle</h1>
+    <img src="assets/banner.jpg" alt="Banner" />
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Features</h2>
+    <ul>
+      <li>Responsive Design</li>
+      <li>Light/Dark Mode</li>
+      <li>Preloader (Video)</li>
+      <li>Sticky Navbar</li>
+      <li>Video Integration</li>
+      <li>Smooth Scroll</li>
+    </ul>
+  </section>
+
+  <!-- Video Section -->
+  <section id="video">
+    <h2>Watch Demo</h2>
+    <video width="100%" controls>
+      <source src="assets/video.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Built by Maaran D</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
